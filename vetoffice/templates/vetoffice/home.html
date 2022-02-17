@@ -1,0 +1,10 @@
+{% extends './base.html' %}
+{% block content %}
+
+<div>
+    <a href="{% url 'ownerlist' %}">Proprietários</a>
+    <a href="{% url 'patientlist' %}">Paciente</a>
+    <a href="{% url 'apptlist' %}">Compromissos</a>
+</div>
+
+{% endblock %}

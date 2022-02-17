@@ -1,0 +1,10 @@
+{% extends './base.html' %}
+{% block content %}
+<h2>Excluir Compromisso</h2>
+<form method="post">
+<div>
+  {% csrf_token %}
+  <p>Voce tem certeza que deseja excluir?"{{ object }}"?</p>
+  <input type="submit" value="Confirm" />
+</div>
+</form>
